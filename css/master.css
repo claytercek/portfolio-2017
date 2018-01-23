@@ -21,23 +21,24 @@ body {
 .homepage .anim-typewriter {
   width: 24ch;
   border-right: 5px solid #3b56cb;
-  font-size: 180%;
+  line-height: 130%;
+  font-size: 200%;
   text-align: left;
   white-space: nowrap;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: visible !important;
   margin:0;
   display: inline-block;
   vertical-align: middle;
 }
 
 .homepage div {
-  width:27rem;
+  width:31rem;
   position: relative;
   top: 50%;
   left:50%;
   transform: translate(-50%,-50%);
-  height: 1ch;
-  overflow: hiden;
+  height: 2.4rem;
 }
 
 /* Animation */
@@ -63,7 +64,7 @@ span#green, h1#endQuote {
 h1#endQuote {
   display: inline-block;
   margin: 0;
-  font-size: 180%;
+  font-size: 200%;
   width:.1rem;
   margin-left: -1rem;
   visibility: hidden;

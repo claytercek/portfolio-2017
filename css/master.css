@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Monaco';
+  src: url('fonts/monaco.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/monaco.woff') format('woff'), /* Pretty Modern Browsers */
+}
 html {
   min-height: 100%;
   overflow: hidden;
@@ -22,6 +27,7 @@ body {
   overflow: hidden;
   margin:0;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .homepage div {
@@ -62,6 +68,7 @@ h1#endQuote {
   margin-left: -1rem;
   visibility: hidden;
   animation: endQuote 1s 1.49s 1 forwards;
+  vertical-align: middle;
 }
 
 @keyframes typeColorPurple {

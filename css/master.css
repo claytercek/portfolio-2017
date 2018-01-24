@@ -1,8 +1,9 @@
 @font-face {
-  font-family: 'Monaco';
-  src: url('/fonts/monaco.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/fonts/monaco.woff') format('woff'), /* Pretty Modern Browsers */
+  font-family: UploadMonaco;
+  src: url('fonts/monaco.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/monaco.woff') format('woff') /* Pretty Modern Browsers */
 }
+
 html {
   min-height: 100%;
   overflow: hidden;
@@ -10,7 +11,7 @@ html {
 
 body {
   color: #abb2bf;
-  font-family: "Monaco", "Courier New", Courier;
+  font-family: UploadMonaco, "Courier New", Courier;
   background-color: rgb(25, 25, 25);
 }
 

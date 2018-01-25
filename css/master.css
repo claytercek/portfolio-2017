@@ -4,10 +4,8 @@
        url('../fonts/monaco.woff') format('woff'); /* Pretty Modern Browsers */
 }
 
-
 html {
   min-height: 100%;
-  overflow: hidden;
 }
 
 body {

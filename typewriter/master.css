@@ -1,0 +1,92 @@
+@font-face {
+  font-family: Monaco;
+  src: url('../fonts/monaco.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/monaco.woff') format('woff'); /* Pretty Modern Browsers */
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  color: #abb2bf;
+  font-family: Monaco, "Courier New", Courier;
+  background-color: rgb(25, 25, 25);
+}
+
+.fullheight {
+  height:100vh;
+}
+
+.homepage .anim-typewriter {
+  width: 24ch;
+  border-right: 5px solid #3b56cb;
+  line-height: 130%;
+  font-size: 200%;
+  text-align: left;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: visible !important;
+  margin:0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.homepage div {
+  width:31rem;
+  position: relative;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  height: 2.4rem;
+}
+
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 2s steps(24) 0.5s 1 normal both,
+    blinkTextCursor 0.6s ease infinite alternate;
+}
+
+@keyframes typewriter {
+  from {width: 0;}
+  to {width: 24ch;}
+}
+
+span#purple {
+  animation: typeColorPurple 0.05s .8s 1 forwards; 
+}
+span#red {
+  animation: typeColorRed 0.05s 1.3s 1 forwards; 
+}
+span#green, h1#endQuote {
+  color:#98c379;
+}
+h1#endQuote {
+  display: inline-block;
+  margin: 0;
+  font-size: 200%;
+  width:.1rem;
+  margin-left: -1rem;
+  visibility: hidden;
+  animation: endQuote 1s 1.49s 1 forwards;
+  vertical-align: middle;
+}
+
+@keyframes typeColorPurple {
+  from {color: #abb2bf}
+  to {color:#c678dd;}
+}
+@keyframes typeColorRed {
+  from {color: #abb2bf}
+  to {color:#e06c75;}
+}
+@keyframes endQuote {
+  from {visibility:visible;}
+  to {visibility:hidden;}
+}
+
+@keyframes blinkTextCursor {
+  from {border-right-color: #3b56cb;}
+  to {border-right-color: transparent;}
+}
+

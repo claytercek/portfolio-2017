@@ -7,6 +7,12 @@
 }
 
 @font-face {
+	font-family: "leaguespartan-bold";
+	src: url("../fonts/leaguespartan-bold.woff2") format("woff2"),
+		url("../fonts/leaguespartan-bold.woff") format("woff");
+}
+
+@font-face {
 	font-family: "GTWalsheimPro";
 	src: url("../fonts/GTWalsheimProMedium.woff2") format("woff2"),
 		url("../fonts/GTWalsheimProMedium.woff") format("woff");
@@ -160,6 +166,21 @@ svg.eyelid {
 }
 
 .homeText h1 {
+	font-size: 4.75vw;
+	font-family: "leaguespartan-bold", "GTWalsheimPro", sans-serif;
+}
+
+.homeText h2 {
+	font-size: 3.5vw;
 	font-family: "GTWalsheimPro", sans-serif;
-	font-weight: 700;
+	font-weight: 300;
+}
+
+@media screen and (min-width: 1009px) {
+	.homeText h1 {
+		font-size: 47.9167px;
+	}
+	.homeText h2 {
+		font-size: 36px;
+	}
 }

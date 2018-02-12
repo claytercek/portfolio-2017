@@ -92,12 +92,13 @@ body {
 }
 
 .eyeWrapper {
-	width: 30vw;
+	width: 29vw;
 	max-width: 250px;
 	max-height: 250px;
-	height: 30vw;
+	height: 29vw;
 	box-sizing: border-box;
-	top: 0;
+	top: 2%;
+	left: 2%;
 	position: relative;
 	background-color: white;
 	border-radius: 100%;
@@ -160,27 +161,39 @@ svg.eyelid {
 .homeText {
 	color: white;
 	width: 70vw;
-	max-width: 700px;
 	margin: 0 auto;
 	position: relative;
 }
 
 .homeText h1 {
-	font-size: 4.75vw;
+	font-size: 8vw;
+	line-height: 12vw;
 	font-family: "leaguespartan-bold", "GTWalsheimPro", sans-serif;
 }
 
 .homeText h2 {
-	font-size: 3.5vw;
+	font-size: 6vw;
 	font-family: "GTWalsheimPro", sans-serif;
 	font-weight: 300;
 }
 
+@media screen and (min-width: 450px) {
+	.homeText h2 {
+		font-size: 3.5vw;
+	}
+	.homeText h1 {
+		font-size: 4.75vw;
+		line-height: initial;
+	}
+}
 @media screen and (min-width: 1009px) {
 	.homeText h1 {
 		font-size: 47.9167px;
 	}
 	.homeText h2 {
 		font-size: 36px;
+	}
+	.homeText {
+		width:700px;
 	}
 }

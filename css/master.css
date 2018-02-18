@@ -52,22 +52,23 @@ body {
   box-sizing: border-box; }
 
 .eyes {
-  height: 30vw;
+  height: 37vw;
   max-height: 250px;
   display: block;
-  width: 70vw;
+  width: 85vw;
   position: relative;
   top: 0%;
   max-width: 700px;
   margin: 0 auto;
+  margin-bottom: -5%;
   display: flex;
   justify-content: space-between; }
 
 .eyeWrapper {
-  width: 30vw;
+  width: 37vw;
   max-width: 250px;
   max-height: 250px;
-  height: 30vw;
+  height: 37vw;
   box-sizing: border-box;
   position: relative;
   background-color: white;
@@ -115,7 +116,7 @@ svg.eyelid {
 
 .homeText {
   color: white;
-  width: 70vw;
+  width: 85vw;
   margin: 0 auto;
   position: relative; }
 
@@ -157,6 +158,17 @@ svg.eyelid {
   transition: 0.4s; }
 
 @media screen and (min-width: 450px) {
+  .eyes {
+    width: 70vw;
+    height: 30vw; }
+
+  .eyeWrapper {
+    width: 30vw;
+    height: 30vw; }
+
+  .homeText {
+    width: 70vw; }
+
   .homeText h2 {
     font-size: 3.5vw; }
 

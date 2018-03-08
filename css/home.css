@@ -1,26 +1,6 @@
 @font-face {
-  font-family: "GTWalsheimPro";
-  src: url("../fonts/GTWalsheimProRegular.woff2") format("woff2"), url("../fonts/GTWalsheimProRegular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
   font-family: "leaguespartan-bold";
   src: url("../fonts/leaguespartan-bold.woff2") format("woff2"), url("../fonts/leaguespartan-bold.woff") format("woff"); }
-@font-face {
-  font-family: "GTWalsheimPro";
-  src: url("../fonts/GTWalsheimProMedium.woff2") format("woff2"), url("../fonts/GTWalsheimProMedium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal; }
-@font-face {
-  font-family: "GTWalsheimPro";
-  src: url("../fonts/GTWalsheimProBlack.woff2") format("woff2"), url("../fonts/GTWalsheimProBlack.woff") format("woff");
-  font-weight: 900;
-  font-style: normal; }
-@font-face {
-  font-family: "GTWalsheimPro";
-  src: url("../fonts/GTWalsheimProThin.woff2") format("woff2"), url("../fonts/GTWalsheimProThin.woff") format("woff");
-  font-weight: 100;
-  font-style: normal; }
 @font-face {
   font-family: "GTWalsheimPro";
   src: url("../fonts/GTWalsheimProBold.woff2") format("woff2"), url("../fonts/GTWalsheimProBold.woff") format("woff");
@@ -28,25 +8,15 @@
   font-style: normal; }
 @font-face {
   font-family: "GTWalsheimPro";
-  src: url("../fonts/GTWalsheimProUltraLight.woff2") format("woff2"), url("../fonts/GTWalsheimProUltraLight.woff") format("woff");
-  font-weight: 200;
-  font-style: normal; }
-@font-face {
-  font-family: "GTWalsheimPro";
   src: url("../fonts/GTWalsheimProLight.woff2") format("woff2"), url("../fonts/GTWalsheimProLight.woff") format("woff");
   font-weight: 300;
-  font-style: normal; }
-@font-face {
-  font-family: "GTWalsheimPro";
-  src: url("../fonts/GTWalsheimProUltraBold.woff2") format("woff2"), url("../fonts/GTWalsheimProUltraBold.woff") format("woff");
-  font-weight: 800;
   font-style: normal; }
 html,
 body {
   font-size: 100%;
   height: 100%;
   width: 100%;
-  background-color: #ff464f; }
+  background-color: #ff5e66; }
 
 * {
   box-sizing: border-box; }
@@ -104,7 +74,7 @@ body {
   border-radius: 100%; }
 
 .st0 {
-  fill: #ff464f; }
+  fill: #ff5e66; }
 
 svg.eyelid {
   position: absolute;
@@ -157,10 +127,11 @@ svg.eyelid {
   border-bottom: 0.3rem solid white;
   transition: 0.4s; }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 600px) {
   .eyes {
     width: 70vw;
-    height: 30vw; }
+    height: 30vw;
+    margin-bottom: 0; }
 
   .eyeWrapper {
     width: 30vw;
@@ -175,7 +146,7 @@ svg.eyelid {
   .homeText h1,
   .homeText nav {
     flex-direction: row;
-    font-size: 4.4vw;
+    font-size: 3.8vw;
     line-height: initial; }
 
   .homeText nav a:hover::after {
@@ -183,14 +154,14 @@ svg.eyelid {
 @media screen and (min-width: 1009px) {
   .homeText h1,
   .homeText nav {
-    font-size: 44.9167px; }
+    font-size: 38.3px; }
 
   .homeText h2 {
     font-size: 36px; }
 
   .homeText {
     width: 700px; } }
-@media screen and (min-height: 700px) and (min-width: 450px) {
+@media screen and (min-height: 700px) and (min-width: 600px) {
   body {
     display: flex;
     align-items: center;
@@ -199,4 +170,4 @@ svg.eyelid {
   .center {
     margin-top: -20%; } }
 
-/*# sourceMappingURL=master.css.map */
+/*# sourceMappingURL=home.css.map */

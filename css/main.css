@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "GTWalsheimPro";
+  src: url("../fonts/GTWalsheimProRegular.woff2") format("woff2"), url("../fonts/GTWalsheimProRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "leaguespartan-bold";
+  src: url("../fonts/leaguespartan-bold.woff2") format("woff2"), url("../fonts/leaguespartan-bold.woff") format("woff"); }
+@font-face {
+  font-family: "GTWalsheimPro";
+  src: url("../fonts/GTWalsheimProMedium.woff2") format("woff2"), url("../fonts/GTWalsheimProMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: "GTWalsheimPro";
+  src: url("../fonts/GTWalsheimProBlack.woff2") format("woff2"), url("../fonts/GTWalsheimProBlack.woff") format("woff");
+  font-weight: 900;
+  font-style: normal; }
+@font-face {
+  font-family: "GTWalsheimPro";
+  src: url("../fonts/GTWalsheimProThin.woff2") format("woff2"), url("../fonts/GTWalsheimProThin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal; }
+@font-face {
+  font-family: "GTWalsheimPro";
+  src: url("../fonts/GTWalsheimProBold.woff2") format("woff2"), url("../fonts/GTWalsheimProBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: "GTWalsheimPro";
+  src: url("../fonts/GTWalsheimProUltraLight.woff2") format("woff2"), url("../fonts/GTWalsheimProUltraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal; }
+@font-face {
+  font-family: "GTWalsheimPro";
+  src: url("../fonts/GTWalsheimProLight.woff2") format("woff2"), url("../fonts/GTWalsheimProLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: "GTWalsheimPro";
+  src: url("../fonts/GTWalsheimProUltraBold.woff2") format("woff2"), url("../fonts/GTWalsheimProUltraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal; }
+html {
+  font-size: 100%;
+  color: white;
+  font-family: "GTWalsheimPro", sans-serif;
+  line-height: 1.5; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: #3bd37f; }
+
+header {
+  background-color: #ff5e66;
+  height: 4rem;
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  justify-content: flex-end;
+  padding: 0 3%;
+  transition: height 0.7s ease;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  overflow: hidden; }
+
+.mobileHeaderOpen {
+  height: 100vh; }
+
+a {
+  text-decoration: none !important;
+  color: unset; }
+
+h1 {
+  color: white;
+  font-size: 165%;
+  font-family: "leaguespartan-bold", "GTWalsheimPro", sans-serif; }
+
+.logo {
+  flex-grow: 1; }
+
+.menu {
+  margin-top: 0.6rem;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer; }
+
+nav {
+  justify-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  font-size: 200%;
+  width: 100%;
+  font-family: "GTWalsheimPro", sans-serif;
+  font-weight: 600;
+  line-height: 200%; }
+
+nav a {
+  margin-left: 60vw;
+  transition: margin-left ease, opacity ease;
+  opacity: 0;
+  color: white; }
+
+.navAnimateIn {
+  margin-left: 0;
+  opacity: 1; }
+
+main {
+  margin: 4rem auto;
+  padding: 1rem;
+  max-width: 75ch; }
+
+@media screen and (min-width: 680px) {
+  header {
+    align-items: baseline; }
+
+  .menu {
+    display: none; }
+
+  nav {
+    width: unset;
+    flex-direction: row;
+    font-size: 160%; }
+
+  nav a {
+    position: relative;
+    opacity: 1;
+    margin-left: 1rem;
+    line-height: 100%; }
+
+  nav a::after {
+    content: "";
+    position: absolute;
+    bottom: -0.2rem;
+    left: 0;
+    width: 0%;
+    border-bottom: 0.2rem solid white;
+    transition: 0.4s; }
+
+  nav a:hover::after {
+    width: 100%; } }
+
+/*# sourceMappingURL=main.css.map */

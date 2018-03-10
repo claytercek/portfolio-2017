@@ -1,6 +1,8 @@
 $red: #ff5e66;
-$blue: #6881ff;
+$lightBlue: #95cefc;
+$darkBlue: #2a3064;
 $white: white;
+$shadow: 0px 3px rgba(0, 0, 0, 0.1);
 
 @font-face {
 	font-family: "leaguespartan-bold";
@@ -46,6 +48,9 @@ body {
 	margin-bottom: -5%;
 	display: flex;
 	justify-content: space-between;
+
+	border: 2px solid $red;
+	overflow: hidden;
 }
 
 .eyeWrapper {
@@ -55,7 +60,7 @@ body {
 	height: 37vw;
 	box-sizing: border-box;
 	position: relative;
-	background-color: white;
+	background-color: $white;
 	border-radius: 100%;
 }
 
@@ -67,6 +72,7 @@ body {
 	background-color: $white;
 	position: absolute;
 	border-radius: 100%;
+	overflow: hidden;
 }
 
 .eye {
@@ -76,7 +82,7 @@ body {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	background-color: $blue;
+	background-color: $lightBlue;
 	border-radius: 100%;
 }
 
@@ -87,7 +93,7 @@ body {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	background-color: #1d1d1d;
+	background-color: $darkBlue;
 	border-radius: 100%;
 }
 
@@ -102,6 +108,7 @@ svg.eyelid {
 	top: 50%;
 	left: 0%;
 	transform: translateY(-50%);
+	filter: drop-shadow(0px 3px rgba(0, 0, 0, 0.2));
 }
 
 .homeText {
@@ -112,6 +119,7 @@ svg.eyelid {
 }
 
 .homeText h1 {
+	text-shadow: $shadow;
 	font-size: 8vw;
 	line-height: 12vw;
 	font-family: "leaguespartan-bold", "GTWalsheimPro", sans-serif;
@@ -125,6 +133,7 @@ svg.eyelid {
 }
 
 .homeText nav {
+	text-shadow: $shadow;
 	display: flex;
 	position: relative;
 	top: 1rem;
@@ -151,6 +160,7 @@ svg.eyelid {
 	width: 0%;
 	border-bottom: 0.3rem solid $white;
 	transition: 0.4s;
+	box-shadow: $shadow;
 }
 
 @media screen and (min-width: 600px) {
@@ -169,21 +179,31 @@ svg.eyelid {
 	.homeText h2 {
 		font-size: 3.5vw;
 	}
-	.homeText h1,
+
 	.homeText nav {
 		flex-direction: row;
 		font-size: 3.8vw;
 		line-height: initial;
 	}
+
+	.homeText h1 {
+		flex-direction: row;
+		font-size: 4.3vw;
+		line-height: initial;
+	}
+
 	.homeText nav a:hover::after {
 		width: 100%;
 	}
 }
 @media screen and (min-width: 1009px) {
-	.homeText h1,
 	.homeText nav {
 		font-size: 38.3px;
 	}
+	.homeText h1 {
+		font-size: 43.3px;
+	}
+
 	.homeText h2 {
 		font-size: 36px;
 	}

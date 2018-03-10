@@ -18,24 +18,22 @@ $(document).ready(function() {
 		currentMousePos.y = event.pageY;
 
 		var l_eyeCursorDistance = Math.sqrt(
-			Math.pow(currentMousePos.x - l_eyePosition.left, 2) +
-				Math.pow(currentMousePos.y - l_eyePosition.top, 2)
+			Math.pow(currentMousePos.x - l_eyePosition.left, 2) + Math.pow(currentMousePos.y - l_eyePosition.top, 2)
 		);
 		var r_eyeCursorDistance = Math.sqrt(
-			Math.pow(currentMousePos.x - r_eyePosition.left, 2) +
-				Math.pow(currentMousePos.y - r_eyePosition.top, 2)
+			Math.pow(currentMousePos.x - r_eyePosition.left, 2) + Math.pow(currentMousePos.y - r_eyePosition.top, 2)
 		);
 
 		var l_eyeDisplacement = l_eyeCursorDistance / 25;
 		var r_eyeDisplacement = r_eyeCursorDistance / 25;
 
-		if (l_eyeDisplacement <= 30) {
-			$("#leftEye").css("top", 50 - l_eyeDisplacement + "%");
-		}
+		// if (l_eyeDisplacement <= 30) {
+		$("#leftEye").css("top", 50 - l_eyeDisplacement + "%");
+		// }
 
-		if (r_eyeDisplacement <= 30) {
-			$("#rightEye").css("margin-top", "-" + r_eyeDisplacement + "%");
-		}
+		// if (r_eyeDisplacement <= 30) {
+		$("#rightEye").css("margin-top", "-" + r_eyeDisplacement + "%");
+		// }
 	});
 
 	function blink() {

@@ -51,7 +51,7 @@ html {
   box-sizing: border-box; }
 
 body {
-  background-color: #3bd37f; }
+  background-color: #2a3064; }
 
 header {
   background-color: #ff5e66;
@@ -65,19 +65,28 @@ header {
   transition: height 0.7s ease;
   flex-wrap: wrap;
   align-content: flex-start;
-  overflow: hidden; }
+  overflow: hidden;
+  box-shadow: 0px 3px rgba(0, 0, 0, 0.1);
+  z-index: 5; }
 
 .mobileHeaderOpen {
   height: 100vh; }
 
 a {
-  text-decoration: none !important;
+  text-decoration: none;
   color: unset; }
+
+main a:hover {
+  text-shadow: 1px 1px #ff5e66; }
 
 h1 {
   color: white;
   font-size: 165%;
-  font-family: "leaguespartan-bold", "GTWalsheimPro", sans-serif; }
+  font-family: "leaguespartan-bold", "GTWalsheimPro", sans-serif;
+  text-shadow: 0px 3px rgba(0, 0, 0, 0.1); }
+
+h2 {
+  text-shadow: 0px 3px rgba(0, 0, 0, 0.1); }
 
 .logo {
   flex-grow: 1; }
@@ -86,7 +95,8 @@ h1 {
   margin-top: 0.6rem;
   width: 3rem;
   height: 3rem;
-  cursor: pointer; }
+  cursor: pointer;
+  filter: drop-shadow(0px 3px rgba(0, 0, 0, 0.1)); }
 
 nav {
   justify-self: flex-start;
@@ -102,16 +112,34 @@ nav a {
   margin-left: 60vw;
   transition: margin-left ease, opacity ease;
   opacity: 0;
-  color: white; }
+  color: white;
+  text-shadow: 0px 3px rgba(0, 0, 0, 0.1); }
 
 .navAnimateIn {
   margin-left: 0;
-  opacity: 1; }
+  opacity: 1;
+  overflow: scroll; }
 
 main {
-  margin: 4rem auto;
+  margin: 4rem auto 0 auto;
   padding: 1rem;
-  max-width: 75ch; }
+  max-width: 70ch;
+  font-size: 120%;
+  height: 100%;
+  overflow: auto; }
+
+.social {
+  z-index: 1 !important;
+  margin: 3rem auto;
+  width: 80%;
+  font-size: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  filter: drop-shadow(0px 3px rgba(0, 0, 0, 0.1)); }
+
+.social a:hover {
+  filter: drop-shadow(2px 2px #ff5e66); }
 
 @media screen and (min-width: 680px) {
   header {
@@ -138,9 +166,13 @@ main {
     left: 0;
     width: 0%;
     border-bottom: 0.2rem solid white;
-    transition: 0.4s; }
+    transition: 0.4s;
+    box-shadow: 0px 3px rgba(0, 0, 0, 0.1); }
 
   nav a:hover::after {
-    width: 100%; } }
+    width: 100%; }
+
+  main {
+    margin: 4rem auto; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,5 +1,7 @@
 $red: #ff5e66;
-$blue: #68afff;
+$shadow: 0px 3px rgba(0, 0, 0, 0.1);
+$lightBlue: #95cefc;
+$darkBlue: #2a3064;
 $green: #3bd37f;
 $yellow: #fff275;
 $white: white;
@@ -84,7 +86,7 @@ html {
 }
 
 body {
-	background-color: $green;
+	background-color: $darkBlue;
 }
 
 header {
@@ -100,19 +102,31 @@ header {
 	flex-wrap: wrap;
 	align-content: flex-start;
 	overflow: hidden;
+	box-shadow: $shadow;
+	z-index: 5;
 }
 
 .mobileHeaderOpen {
 	height: 100vh;
 }
 a {
-	text-decoration: none !important;
+	text-decoration: none;
 	color: unset;
 }
+
+main a:hover {
+	text-shadow: 1px 1px $red;
+}
+
 h1 {
 	color: $white;
 	font-size: 165%;
 	font-family: "leaguespartan-bold", "GTWalsheimPro", sans-serif;
+	text-shadow: $shadow;
+}
+
+h2 {
+	text-shadow: $shadow;
 }
 .logo {
 	flex-grow: 1;
@@ -122,6 +136,7 @@ h1 {
 	width: 3rem;
 	height: 3rem;
 	cursor: pointer;
+	filter: drop-shadow($shadow);
 }
 
 nav {
@@ -139,17 +154,37 @@ nav a {
 	transition: margin-left ease, opacity ease;
 	opacity: 0;
 	color: $white;
+	text-shadow: $shadow;
 }
 
 .navAnimateIn {
 	margin-left: 0;
 	opacity: 1;
+	overflow: scroll;
 }
 
 main {
-	margin: 4rem auto;
+	margin: 4rem auto 0 auto;
 	padding: 1rem;
-	max-width: 75ch;
+	max-width: 70ch;
+	font-size: 120%;
+	height: 100%;
+	overflow: auto;
+}
+
+.social {
+	z-index: 1 !important;
+	margin: 3rem auto;
+	width: 80%;
+	font-size: 2rem;
+	text-align: center;
+	display: flex;
+	justify-content: space-evenly;
+	filter: drop-shadow($shadow);
+}
+
+.social a:hover {
+	filter: drop-shadow(2px 2px $red);
 }
 
 @media screen and (min-width: 680px) {
@@ -179,9 +214,14 @@ main {
 		width: 0%;
 		border-bottom: 0.2rem solid $white;
 		transition: 0.4s;
+		box-shadow: $shadow;
 	}
 
 	nav a:hover::after {
 		width: 100%;
+	}
+
+	main {
+		margin: 4rem auto;
 	}
 }

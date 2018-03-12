@@ -102,7 +102,7 @@ nav {
   justify-self: flex-start;
   display: flex;
   flex-direction: column;
-  font-size: 200%;
+  font-size: 160%;
   width: 100%;
   font-family: "GTWalsheimPro", sans-serif;
   font-weight: 600;
@@ -117,20 +117,18 @@ nav a {
 
 .navAnimateIn {
   margin-left: 0;
-  opacity: 1;
-  overflow: scroll; }
+  opacity: 1; }
 
 main {
   margin: 4rem auto 0 auto;
   padding: 1rem;
   max-width: 70ch;
   font-size: 120%;
-  height: 100%;
-  overflow: auto; }
+  height: 100%; }
 
 .social {
   z-index: 1 !important;
-  margin: 3rem auto;
+  margin: 2rem auto;
   width: 80%;
   font-size: 2rem;
   text-align: center;
@@ -141,23 +139,121 @@ main {
 .social a:hover {
   filter: drop-shadow(2px 2px #ff5e66); }
 
+.experienceItem {
+  border-left: 6px solid #95cefc;
+  margin: 0 1rem;
+  padding: 1.5rem 0 1.5rem 2.5rem;
+  position: relative;
+  top: 4rem; }
+
+.experienceItem a:hover {
+  text-shadow: none; }
+
+.experienceItem:last-of-type {
+  border-left: 6px solid transparent; }
+
+.dot {
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #95cefc;
+  border-radius: 100%;
+  position: absolute;
+  top: -0.5rem;
+  left: calc(-0.5rem - 3px - 0.25rem);
+  border: 4px solid #95cefc;
+  transition: all 0.5s ease;
+  filter: drop-shadow(0px 3px rgba(0, 0, 0, 0.1)); }
+
+.experienceItem p {
+  margin: 0; }
+
+.employer {
+  position: relative;
+  top: -4rem;
+  transition: all 0.5s ease;
+  left: 0; }
+
+.employer:hover {
+  left: 1rem; }
+
+.experienceItem:hover .dot {
+  background-color: white; }
+
+.date {
+  color: #95cefc; }
+
+.videoGallery {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.videoGallery a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  height: auto;
+  border: 3px solid #95cefc;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  transition: opacity 0.5s ease;
+  background-color: #95cefc; }
+
+.videoGallery a h2 {
+  position: relative;
+  margin: 0;
+  margin-top: 10px;
+  transition: margin-top 0.4s ease-out, opacity 0.6s ease;
+  z-index: 2;
+  position: absolute;
+  display: block;
+  align-self: center;
+  opacity: 0; }
+
+.videoGallery a:hover h2 {
+  opacity: 1;
+  margin-top: 0px; }
+
+.videoGallery a img {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease-out; }
+
+.videoGallery a:hover img {
+  opacity: 0.65; }
+
+.cascadeLoad {
+  opacity: 0; }
+
 @media screen and (min-width: 680px) {
+  .videoGallery a {
+    width: calc(50% - 0.5rem); }
+
   header {
     align-items: baseline; }
 
   .menu {
     display: none; }
 
+  .mobileHeaderOpen {
+    height: 4rem; }
+
   nav {
     width: unset;
     flex-direction: row;
     font-size: 160%; }
 
-  nav a {
+  nav a,
+  .navAnimateIn {
     position: relative;
     opacity: 1;
     margin-left: 1rem;
-    line-height: 100%; }
+    line-height: 100%;
+    transition: none; }
 
   nav a::after {
     content: "";

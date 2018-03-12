@@ -1,8 +1,8 @@
 $red: #ff5e66;
+$shadow: 0px 3px rgba(0, 0, 0, 0.1);
 $lightBlue: #95cefc;
 $darkBlue: #2a3064;
 $white: white;
-$shadow: 0px 3px rgba(0, 0, 0, 0.1);
 
 @font-face {
 	font-family: "leaguespartan-bold";
@@ -48,9 +48,6 @@ body {
 	margin-bottom: -5%;
 	display: flex;
 	justify-content: space-between;
-
-	border: 2px solid $red;
-	overflow: hidden;
 }
 
 .eyeWrapper {
@@ -60,30 +57,31 @@ body {
 	height: 37vw;
 	box-sizing: border-box;
 	position: relative;
-	background-color: $white;
-	border-radius: 100%;
+	overflow: hidden;
 }
 
 .eyeWhite {
-	top: 0.5%;
-	left: 0.5%;
-	width: 99%;
-	height: 99%;
+	// top: 1%;
+	// left: 1%;
+	width: 100%;
+	height: 100%;
 	background-color: $white;
 	position: absolute;
 	border-radius: 100%;
 	overflow: hidden;
+	border: 1px solid $red;
 }
 
 .eye {
-	height: 30%;
-	width: 30%;
+	height: 32%;
+	width: 32%;
 	position: relative;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
 	background-color: $lightBlue;
 	border-radius: 100%;
+	overflow: hidden;
 }
 
 .pupil {
@@ -136,7 +134,6 @@ svg.eyelid {
 	text-shadow: $shadow;
 	display: flex;
 	position: relative;
-	top: 1rem;
 	justify-content: space-between;
 	font-size: 8vw;
 	line-height: 12vw;
@@ -220,6 +217,6 @@ svg.eyelid {
 	}
 
 	.center {
-		margin-top: -20%;
+		margin-top: -20vh;
 	}
 }

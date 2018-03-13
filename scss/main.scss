@@ -197,6 +197,8 @@ main {
 
 .experienceItem:last-of-type {
 	border-left: 6px solid transparent;
+	border-right-width: 0px !important;
+	border-image: linear-gradient(to bottom, $lightBlue, rgba(149, 206, 252, 0) 50%) 1 100%;
 }
 
 .dot {
@@ -210,6 +212,7 @@ main {
 	border: 4px solid $lightBlue;
 	transition: all 0.5s ease;
 	filter: drop-shadow($shadow);
+	z-index: 3;
 }
 
 .experienceItem p {
@@ -218,7 +221,7 @@ main {
 .employer {
 	position: relative;
 	top: -4rem;
-	transition: all 0.5s ease;
+	transition: all 0.5s ease, opacity 1s ease-out;
 	left: 0;
 }
 .employer:hover {
@@ -251,7 +254,6 @@ main {
 	border: 3px solid $lightBlue;
 	box-shadow: 0px 4px rgba(0, 0, 0, 0.1);
 	margin-bottom: 1rem;
-	transition: opacity 0.5s ease;
 	background-color: $lightBlue;
 }
 
@@ -259,7 +261,7 @@ main {
 	position: relative;
 	margin: 0;
 	margin-top: 10px;
-	transition: margin-top 0.4s ease-out, opacity 0.6s ease;
+	transition: margin-top 0.4s ease-out;
 	z-index: 2;
 	position: absolute;
 	display: block;
@@ -276,7 +278,6 @@ main {
 	z-index: 1;
 	width: 100%;
 	height: 100%;
-	transition: opacity 0.5s ease-out;
 }
 
 .videoGallery a:hover img {
@@ -285,9 +286,70 @@ main {
 
 .cascadeLoad {
 	opacity: 0;
+	animation: fadein 0.8s forwards;
 }
 
-@media screen and (min-width: 680px) {
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.portfolioGallery {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.portfolioItem {
+	width: 100%;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	background-color: $lightBlue;
+	margin-bottom: 1rem;
+}
+
+.portfolioGallery a:hover {
+	text-shadow: none;
+}
+
+.portfolioGallery img {
+	width: 100%;
+}
+
+.portfolioItem h2 {
+	display: inline-block;
+	margin: 0 0 0.5rem 0;
+	position: relative;
+	width: fit-content;
+}
+
+.portfolioText {
+	margin: 0 1.2rem;
+	line-height: 1.2;
+
+	p {
+		margin: 0;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	.portfolioItem {
+		flex-direction: row;
+		padding: 1rem 0;
+		align-items: center;
+	}
+
+	.portfolioGallery img {
+		height: 100%;
+		min-height: 250px;
+		width: unset;
+	}
+
 	.videoGallery a {
 		width: calc(50% - 0.5rem);
 	}
@@ -315,7 +377,8 @@ main {
 		transition: none;
 	}
 
-	nav a::after {
+	nav a::after,
+	.portfolioItem h2::after {
 		content: "";
 		position: absolute;
 		bottom: -0.2rem;
@@ -326,7 +389,8 @@ main {
 		box-shadow: $shadow;
 	}
 
-	nav a:hover::after {
+	nav a:hover::after,
+	.portfolioItem:hover h2::after {
 		width: 100%;
 	}
 

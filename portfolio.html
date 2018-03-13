@@ -23,10 +23,32 @@
             <a href="about.html">About</a>
         </nav>
     </header>
-    <main>
-        <h1>Page coming soon!</h1>
+    <main class="portfolioGallery">
+        <a class="portfolioItem cascadeLoad" href="https://invis.io/PXE2QIOTC">
+            <img srcset="images/portfolio/large/mta.jpg 2000w,
+                images/portfolio/medium/mta.jpg 1000w,
+                images/portfolio/small/mta.jpg 500w" sizes="(max-width: 700px) 95vw,
+                (max-width: 780px) 46vw,
+                365.5px" src="images/portfolio/small/mta.jpg" alt="MTA Mockup" />
+            <div class="portfolioText">
+                <h2>MTA Redesign</h2>
+                <p>Final project from User Interface Design I. A high fidelity prototype made in Invision. The result of ten weeks of work involving wireframing, usabilty testing, color systems, and more.</p>
+            </div>
+        </a>
+        <a class="portfolioItem cascadeLoad" href="/zodiac">
+            <img srcset="images/portfolio/large/zodiac.jpg 2000w,
+                    images/portfolio/medium/zodiac.jpg 1000w,
+                    images/portfolio/small/zodiac.jpg 500w" sizes="(max-width: 700px) 95vw,
+                    (max-width: 780px) 46vw,
+                    365.5px" src="images/portfolio/small/zodiac.jpg" alt="Zodiac Project" />
+            <div class="portfolioText">
+                <h2>Zodiac</h2>
+                <p>Final project from Scripting I. A responsive site that returns a Jazz Artist based on the users birthday. The result of a ten week course focusing in javascript.</p>
+            </div>
+        </a>
     </main>
     <script src="js/main.js"></script>
+    <script src="js/galleryLoad.js"></script>
 </body>
 
 </html>

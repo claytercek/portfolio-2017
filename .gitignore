@@ -46,8 +46,7 @@
 ~*
 
 
-# ignore images
-*.jpg
+
 
 # ignore node/grunt dependency directories
 node_modules/

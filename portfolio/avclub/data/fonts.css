@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "C-GT Walsheim Pro-18";
+  src: url('../data/uxpin-user-fonts-us-west-1.s3.amazonaws.com_824394_2f88e58_GTWalsheimProBold.woff');
+}
+@font-face {
+  font-family: "C-GT Walsheim Pro-10";
+  src: url('../data/uxpin-user-fonts-us-west-1.s3.amazonaws.com_824394_a43128c_GTWalsheimProRegular.woff');
+}
+@font-face {
+  font-family: "C-GT Walsheim Pro-12";
+  src: url('../data/uxpin-user-fonts-us-west-1.s3.amazonaws.com_824394_5f50d6a_GTWalsheimProMedium.woff');
+}
+@font-face {
+  font-family: "C-GT Walsheim Pro-8";
+  src: url('../data/uxpin-user-fonts-us-west-1.s3.amazonaws.com_824394_46b01b1_GTWalsheimProLight.woff');
+}

@@ -232,6 +232,10 @@ main {
 	background-color: $white;
 }
 
+.experience {
+	overflow: hidden;
+}
+
 .date {
 	color: $lightBlue;
 }
@@ -395,6 +399,6 @@ main {
 	}
 
 	main {
-		margin: 4rem auto;
+		margin: 4rem auto 0 auto;
 	}
 }

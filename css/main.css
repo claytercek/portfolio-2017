@@ -182,6 +182,9 @@ main {
 .experienceItem:hover .dot {
   background-color: white; }
 
+.experience {
+  overflow: hidden; }
+
 .date {
   color: #95cefc; }
 
@@ -319,6 +322,6 @@ main {
     width: 100%; }
 
   main {
-    margin: 4rem auto; } }
+    margin: 4rem auto 0 auto; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
 	$(".eyeWhite").followCursor();
 
 	var currentMousePos = { x: -1, y: -1 };
@@ -13,7 +13,7 @@ $(document).ready(function() {
 	r_eyePosition.left = r_eyePosition.left + eyewidth / 2;
 	r_eyePosition.top = r_eyePosition.top + eyewidth / 2;
 
-	$(document).mousemove(function(event) {
+	$(document).mousemove(function (event) {
 		currentMousePos.x = event.pageX;
 		currentMousePos.y = event.pageY;
 
@@ -58,7 +58,7 @@ $(document).ready(function() {
 
 	(function loop() {
 		var rand = Math.round(Math.random() * (6000 - 500)) + 500;
-		setTimeout(function() {
+		setTimeout(function () {
 			blink();
 			loop();
 		}, rand);

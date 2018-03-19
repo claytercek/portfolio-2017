@@ -217,6 +217,7 @@ main {
 
 .experienceItem p {
 	margin: 0;
+	
 }
 .employer {
 	position: relative;
@@ -338,6 +339,43 @@ main {
 
 	p {
 		margin: 0;
+		font-weight: 300;
+	}
+}
+
+p {
+	font-weight: 200;
+}
+
+.embedContainer{
+	position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; width: 100%; height: auto; 
+}
+.embedContainer iframe {
+	width:100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+}
+
+div.video {
+	background-color: $red;
+	padding: 1rem;
+
+	a {
+		text-decoration: underline;
+	}
+
+	a:hover {
+		opacity: .7;
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+	h1 {
+		margin:0;
 	}
 }
 
@@ -400,5 +438,6 @@ main {
 
 	main {
 		margin: 4rem auto 0 auto;
+		padding-top: 2.5rem;
 	}
 }

@@ -268,11 +268,10 @@ main {
   margin: 0 1.2rem;
   line-height: 1.2; }
   .portfolioText p {
-    margin: 0;
-    font-weight: 300; }
+    margin: 0; }
 
 p {
-  font-weight: 200; }
+  font-weight: 300; }
 
 .embedContainer {
   position: relative;

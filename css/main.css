@@ -1,358 +1,445 @@
 @font-face {
-  font-family: "GTWalsheimPro";
-  src: url("../fonts/GTWalsheimProRegular.woff2") format("woff2"), url("../fonts/GTWalsheimProRegular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
+	font-family: "GTWalsheimPro";
+	src: url("../fonts/GTWalsheimProRegular.woff2") format("woff2"),
+		url("../fonts/GTWalsheimProRegular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
 @font-face {
-  font-family: "leaguespartan-bold";
-  src: url("../fonts/leaguespartan-bold.woff2") format("woff2"), url("../fonts/leaguespartan-bold.woff") format("woff"); }
+	font-family: "leaguespartan-bold";
+	src: url("../fonts/leaguespartan-bold.woff2") format("woff2"),
+		url("../fonts/leaguespartan-bold.woff") format("woff");
+}
 @font-face {
-  font-family: "GTWalsheimPro";
-  src: url("../fonts/GTWalsheimProMedium.woff2") format("woff2"), url("../fonts/GTWalsheimProMedium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal; }
+	font-family: "GTWalsheimPro";
+	src: url("../fonts/GTWalsheimProMedium.woff2") format("woff2"),
+		url("../fonts/GTWalsheimProMedium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+}
 @font-face {
-  font-family: "GTWalsheimPro";
-  src: url("../fonts/GTWalsheimProBlack.woff2") format("woff2"), url("../fonts/GTWalsheimProBlack.woff") format("woff");
-  font-weight: 900;
-  font-style: normal; }
+	font-family: "GTWalsheimPro";
+	src: url("../fonts/GTWalsheimProBlack.woff2") format("woff2"),
+		url("../fonts/GTWalsheimProBlack.woff") format("woff");
+	font-weight: 900;
+	font-style: normal;
+}
 @font-face {
-  font-family: "GTWalsheimPro";
-  src: url("../fonts/GTWalsheimProThin.woff2") format("woff2"), url("../fonts/GTWalsheimProThin.woff") format("woff");
-  font-weight: 100;
-  font-style: normal; }
+	font-family: "GTWalsheimPro";
+	src: url("../fonts/GTWalsheimProThin.woff2") format("woff2"),
+		url("../fonts/GTWalsheimProThin.woff") format("woff");
+	font-weight: 100;
+	font-style: normal;
+}
 @font-face {
-  font-family: "GTWalsheimPro";
-  src: url("../fonts/GTWalsheimProBold.woff2") format("woff2"), url("../fonts/GTWalsheimProBold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal; }
+	font-family: "GTWalsheimPro";
+	src: url("../fonts/GTWalsheimProBold.woff2") format("woff2"),
+		url("../fonts/GTWalsheimProBold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+}
 @font-face {
-  font-family: "GTWalsheimPro";
-  src: url("../fonts/GTWalsheimProUltraLight.woff2") format("woff2"), url("../fonts/GTWalsheimProUltraLight.woff") format("woff");
-  font-weight: 200;
-  font-style: normal; }
+	font-family: "GTWalsheimPro";
+	src: url("../fonts/GTWalsheimProUltraLight.woff2") format("woff2"),
+		url("../fonts/GTWalsheimProUltraLight.woff") format("woff");
+	font-weight: 200;
+	font-style: normal;
+}
 @font-face {
-  font-family: "GTWalsheimPro";
-  src: url("../fonts/GTWalsheimProLight.woff2") format("woff2"), url("../fonts/GTWalsheimProLight.woff") format("woff");
-  font-weight: 300;
-  font-style: normal; }
+	font-family: "GTWalsheimPro";
+	src: url("../fonts/GTWalsheimProLight.woff2") format("woff2"),
+		url("../fonts/GTWalsheimProLight.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+}
 @font-face {
-  font-family: "GTWalsheimPro";
-  src: url("../fonts/GTWalsheimProUltraBold.woff2") format("woff2"), url("../fonts/GTWalsheimProUltraBold.woff") format("woff");
-  font-weight: 800;
-  font-style: normal; }
+	font-family: "GTWalsheimPro";
+	src: url("../fonts/GTWalsheimProUltraBold.woff2") format("woff2"),
+		url("../fonts/GTWalsheimProUltraBold.woff") format("woff");
+	font-weight: 800;
+	font-style: normal;
+}
 html {
-  font-size: 100%;
-  color: white;
-  font-family: "GTWalsheimPro", sans-serif;
-  line-height: 1.5; }
+	font-size: 100%;
+	color: white;
+	font-family: "GTWalsheimPro", sans-serif;
+	line-height: 1.5;
+}
 
 * {
-  box-sizing: border-box; }
+	box-sizing: border-box;
+}
 
 body {
-  background-color: #2a3064; }
+	background-color: #2a3064;
+}
 
 header {
-  background-color: #ff5e66;
-  height: 4rem;
-  display: flex;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  justify-content: flex-end;
-  padding: 0 3%;
-  transition: height 0.7s ease;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  overflow: hidden;
-  box-shadow: 0px 3px rgba(0, 0, 0, 0.1);
-  z-index: 5; }
+	background-color: #ff5e66;
+	height: 4rem;
+	display: flex;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	justify-content: flex-end;
+	padding: 0 3%;
+	transition: height 0.7s ease;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	overflow: hidden;
+	box-shadow: 0px 3px rgba(0, 0, 0, 0.1);
+	z-index: 5;
+}
 
 .mobileHeaderOpen {
-  height: 100vh; }
+	height: 100vh;
+}
 
 a {
-  text-decoration: none;
-  color: unset; }
+	text-decoration: none;
+	color: unset;
+}
 
 main a:hover {
-  text-shadow: 1px 1px #ff5e66; }
+	text-shadow: 1px 1px #ff5e66;
+}
 
 h1 {
-  color: white;
-  font-size: 165%;
-  font-family: "leaguespartan-bold", "GTWalsheimPro", sans-serif;
-  text-shadow: 0px 3px rgba(0, 0, 0, 0.1); }
+	color: white;
+	font-size: 165%;
+	font-family: "leaguespartan-bold", "GTWalsheimPro", sans-serif;
+	text-shadow: 0px 3px rgba(0, 0, 0, 0.1);
+}
 
 h2 {
-  text-shadow: 0px 3px rgba(0, 0, 0, 0.1); }
+	text-shadow: 0px 3px rgba(0, 0, 0, 0.1);
+}
 
 .logo {
-  flex-grow: 1; }
+	flex-grow: 1;
+}
 
 .menu {
-  margin-top: 0.6rem;
-  width: 3rem;
-  height: 3rem;
-  cursor: pointer;
-  filter: drop-shadow(0px 3px rgba(0, 0, 0, 0.1)); }
+	margin-top: 0.6rem;
+	width: 3rem;
+	height: 3rem;
+	cursor: pointer;
+	filter: drop-shadow(0px 3px rgba(0, 0, 0, 0.1));
+}
 
 nav {
-  justify-self: flex-start;
-  display: flex;
-  flex-direction: column;
-  font-size: 160%;
-  width: 100%;
-  font-family: "GTWalsheimPro", sans-serif;
-  font-weight: 600;
-  line-height: 200%; }
+	justify-self: flex-start;
+	display: flex;
+	flex-direction: column;
+	font-size: 160%;
+	width: 100%;
+	font-family: "GTWalsheimPro", sans-serif;
+	font-weight: 600;
+	line-height: 200%;
+}
 
 nav a {
-  margin-left: 60vw;
-  transition: margin-left ease, opacity ease;
-  opacity: 0;
-  color: white;
-  text-shadow: 0px 3px rgba(0, 0, 0, 0.1); }
+	margin-left: 60vw;
+	transition: margin-left ease, opacity ease;
+	opacity: 0;
+	color: white;
+	text-shadow: 0px 3px rgba(0, 0, 0, 0.1);
+}
 
 .navAnimateIn {
-  margin-left: 0;
-  opacity: 1; }
+	margin-left: 0;
+	opacity: 1;
+}
 
 main {
-  margin: 4rem auto 0 auto;
-  padding: 1rem;
-  max-width: 70ch;
-  font-size: 120%;
-  height: 100%; }
+	margin: 4rem auto 0 auto;
+	padding: 1rem;
+	max-width: 70ch;
+	font-size: 120%;
+	height: 100%;
+}
 
 .social {
-  z-index: 1 !important;
-  margin: 2rem auto;
-  width: 80%;
-  font-size: 2rem;
-  text-align: center;
-  display: flex;
-  justify-content: space-evenly;
-  filter: drop-shadow(0px 3px rgba(0, 0, 0, 0.1)); }
+	z-index: 1 !important;
+	margin: 2rem auto;
+	width: 80%;
+	font-size: 2rem;
+	text-align: center;
+	display: flex;
+	justify-content: space-evenly;
+	filter: drop-shadow(0px 3px rgba(0, 0, 0, 0.1));
+}
 
 .social a:hover {
-  filter: drop-shadow(2px 2px #ff5e66); }
+	filter: drop-shadow(2px 2px #ff5e66);
+}
 
 .experienceItem {
-  border-left: 6px solid #95cefc;
-  margin: 0 1rem;
-  padding: 1.5rem 0 1.5rem 2.5rem;
-  position: relative;
-  top: 4rem; }
+	border-left: 6px solid #95cefc;
+	margin: 0 1rem;
+	padding: 1.5rem 0 1.5rem 2.5rem;
+	position: relative;
+	top: 4rem;
+}
 
 .experienceItem a:hover {
-  text-shadow: none; }
+	text-shadow: none;
+}
 
 .experienceItem:last-of-type {
-  border-left: 6px solid transparent;
-  border-right-width: 0px !important;
-  border-image: linear-gradient(to bottom, #95cefc, rgba(149, 206, 252, 0) 50%) 1 100%; }
+	border-left: 6px solid transparent;
+	border-right-width: 0px !important;
+	border-image: linear-gradient(
+			to bottom,
+			#95cefc,
+			rgba(149, 206, 252, 0) 50%
+		)
+		1 100%;
+}
 
 .dot {
-  height: 1.5rem;
-  width: 1.5rem;
-  background-color: #95cefc;
-  border-radius: 100%;
-  position: absolute;
-  top: -0.5rem;
-  left: calc(-0.5rem - 3px - 0.25rem);
-  border: 4px solid #95cefc;
-  transition: all 0.5s ease;
-  filter: drop-shadow(0px 3px rgba(0, 0, 0, 0.1));
-  z-index: 3; }
+	height: 1.5rem;
+	width: 1.5rem;
+	background-color: #95cefc;
+	border-radius: 100%;
+	position: absolute;
+	top: -0.5rem;
+	left: calc(-0.5rem - 3px - 0.25rem);
+	border: 4px solid #95cefc;
+	transition: all 0.5s ease;
+	filter: drop-shadow(0px 3px rgba(0, 0, 0, 0.1));
+	z-index: 3;
+}
 
 .experienceItem p {
-  margin: 0; }
+	margin: 0;
+}
 
 .employer {
-  position: relative;
-  top: -4rem;
-  transition: all 0.5s ease, opacity 1s ease-out;
-  left: 0; }
+	position: relative;
+	top: -4rem;
+	transition: all 0.5s ease, opacity 1s ease-out;
+	left: 0;
+}
 
 .employer:hover {
-  left: 1rem; }
+	left: 1rem;
+}
 
 .experienceItem:hover .dot {
-  background-color: white; }
+	background-color: white;
+}
 
 .experience {
-  overflow: hidden; }
+	overflow: hidden;
+}
 
 .date {
-  color: #95cefc; }
+	color: #95cefc;
+}
 
 .videoGallery {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between; }
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
 
 .videoGallery a {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  position: relative;
-  height: auto;
-  border: 3px solid #95cefc;
-  box-shadow: 0px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1rem;
-  background-color: #95cefc; }
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	position: relative;
+	height: auto;
+	border: 3px solid #95cefc;
+	box-shadow: 0px 4px rgba(0, 0, 0, 0.1);
+	margin-bottom: 1rem;
+	background-color: #95cefc;
+}
 
 .videoGallery a h2 {
-  position: relative;
-  margin: 0;
-  margin-top: 10px;
-  transition: margin-top 0.4s ease-out;
-  z-index: 2;
-  position: absolute;
-  display: block;
-  align-self: center;
-  opacity: 0; }
+	position: relative;
+	margin: 0;
+	margin-top: 10px;
+	transition: margin-top 0.4s ease-out;
+	z-index: 2;
+	position: absolute;
+	display: block;
+	align-self: center;
+	opacity: 0;
+}
 
 .videoGallery a:hover h2 {
-  opacity: 1;
-  margin-top: 0px; }
+	opacity: 1;
+	margin-top: 0px;
+}
 
 .videoGallery a img {
-  z-index: 1;
-  width: 100%;
-  height: 100%; }
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+}
 
 .videoGallery a:hover img {
-  opacity: 0.65; }
+	opacity: 0.65;
+}
 
 .cascadeLoad {
-  opacity: 0;
-  animation: fadein 0.8s forwards; }
+	opacity: 0;
+	animation: fadein 0.8s forwards;
+}
 
 @keyframes fadein {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
 .portfolioGallery {
-  display: flex;
-  flex-direction: column;
-  width: 100%; }
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
 
 .portfolioItem {
-  width: 100%;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  background-color: #95cefc;
-  margin-bottom: 1rem; }
+	width: 100%;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	background-color: #95cefc;
+	margin-bottom: 1rem;
+}
 
 .portfolioGallery a:hover {
-  text-shadow: none; }
+	text-shadow: none;
+}
 
 .portfolioGallery img {
-  width: 100%; }
+	width: 100%;
+}
 
 .portfolioItem h2 {
-  display: inline-block;
-  margin: 0 0 0.5rem 0;
-  position: relative;
-  width: fit-content; }
+	display: inline-block;
+	margin: 0 0 0.5rem 0;
+	position: relative;
+	width: fit-content;
+}
 
 .portfolioText {
-  margin: 0 1.2rem;
-  line-height: 1.2; }
-  .portfolioText p {
-    margin: 0; }
+	margin: 0 1.2rem;
+	line-height: 1.2;
+}
+.portfolioText p {
+	margin: 0;
+}
 
 p {
-  font-weight: 300; }
+	font-weight: 300;
+}
 
 .embedContainer {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  width: 100%;
-  height: auto; }
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+}
 
 .embedContainer iframe {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0; }
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
 
 div.video {
-  background-color: #ff5e66;
-  padding: 1rem; }
-  div.video a {
-    text-decoration: underline; }
-  div.video a:hover {
-    opacity: .7; }
-  div.video p {
-    margin-bottom: 0; }
-  div.video h1 {
-    margin: 0; }
+	background-color: #ff5e66;
+	padding: 1rem;
+}
+div.video a {
+	text-decoration: underline;
+}
+div.video a:hover {
+	opacity: 0.7;
+}
+div.video p {
+	margin-bottom: 0;
+}
+div.video h1 {
+	margin: 0;
+}
 
 @media screen and (min-width: 700px) {
-  .portfolioItem {
-    flex-direction: row;
-    padding: 1rem 0;
-    align-items: center; }
+	.portfolioItem {
+		flex-direction: row;
+		padding: 1rem 0;
+		align-items: center;
+	}
 
-  .portfolioGallery img {
-    height: 100%;
-    min-height: 250px;
-    width: unset; }
+	.portfolioGallery img {
+		height: 100%;
+		min-height: 250px;
+		width: unset;
+	}
 
-  .videoGallery a {
-    width: calc(50% - 0.5rem); }
+	.videoGallery a {
+		width: calc(50% - 0.5rem);
+	}
 
-  header {
-    align-items: baseline; }
+	header {
+		align-items: baseline;
+	}
 
-  .menu {
-    display: none; }
+	.menu {
+		display: none;
+	}
 
-  .mobileHeaderOpen {
-    height: 4rem; }
+	.mobileHeaderOpen {
+		height: 4rem;
+	}
 
-  nav {
-    width: unset;
-    flex-direction: row;
-    font-size: 160%; }
+	nav {
+		width: unset;
+		flex-direction: row;
+		font-size: 160%;
+	}
 
-  nav a,
-  .navAnimateIn {
-    position: relative;
-    opacity: 1;
-    margin-left: 1rem;
-    line-height: 100%;
-    transition: none; }
+	nav a,
+	.navAnimateIn {
+		position: relative;
+		opacity: 1;
+		margin-left: 1rem;
+		line-height: 100%;
+		transition: none;
+	}
 
-  nav a::after,
-  .portfolioItem h2::after {
-    content: "";
-    position: absolute;
-    bottom: -0.2rem;
-    left: 0;
-    width: 0%;
-    border-bottom: 0.2rem solid white;
-    transition: 0.4s;
-    box-shadow: 0px 3px rgba(0, 0, 0, 0.1); }
+	nav a::after,
+	.portfolioItem h2::after {
+		content: "";
+		position: absolute;
+		bottom: -0.2rem;
+		left: 0;
+		width: 0%;
+		border-bottom: 0.2rem solid white;
+		transition: 0.4s;
+		box-shadow: 0px 3px rgba(0, 0, 0, 0.1);
+	}
 
-  nav a:hover::after,
-  .portfolioItem:hover h2::after {
-    width: 100%; }
+	nav a:hover::after,
+	.portfolioItem:hover h2::after {
+		width: 100%;
+	}
 
-  main {
-    margin: 4rem auto 0 auto;
-    padding-top: 2.5rem; } }
+	main {
+		margin: 4rem auto 0 auto;
+		padding-top: 2.5rem;
+	}
+}
 
 /*# sourceMappingURL=main.css.map */
